@@ -1,0 +1,20 @@
+:root {
+  --main-color: rgb(247, 248, 251);
+  --main-text-color: rgb(53, 0, 104);
+  --main-icon-color: rgb(110, 87, 153);
+  --secondary-color: rgb(175, 157, 255);
+  --secondary-text-color: rgb(123, 103, 141);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.containers {
+  display: flex;
+  flex-direction: row;
+}

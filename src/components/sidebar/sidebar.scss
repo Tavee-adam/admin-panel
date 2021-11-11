@@ -1,0 +1,121 @@
+.sidebar {
+  flex: 1;
+  height: calc(100vh - 50px);
+  // background-color: var(--secondary-color);
+  position: sticky;
+  top: 50px;
+  // border-right: 1px solid rgb(227, 229, 235);
+
+  .sidewrapper {
+    background-color: var(--secondary-color);
+    width: fit-content;
+    height: 100%;
+    padding-top: 10px;
+    color: var(--main-text-color);
+    .menu {
+      margin: 15px 10px 0 10px;
+
+      .title {
+        margin: 2px 0;
+        font-size: 15px;
+        color: var(--main-text-color);
+      }
+      .menulist {
+        margin-top: 0;
+        // margin-bottom: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .menulistitem {
+          cursor: pointer;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          border-radius: 10px;
+          .linkText {
+            text-decoration: none;
+            .sideIcons {
+              color: var(--main-text-color);
+              padding-right: 15px;
+            }
+          }
+          .sideIcons {
+            padding-right: 15px;
+          }
+          &:hover {
+            width: 70%;
+            // background-color: rgb(121, 103, 202);
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            .linkText {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar.expand {
+  flex: 1;
+  // width: 70px;
+  height: calc(100vh - 50px);
+  background-color: var(--secondary-color);
+  position: sticky;
+  top: 50px;
+  // border-right: 1px solid rgb(227, 229, 235);
+
+  .sidewrapper {
+    padding: 0 20px;
+    color: var(--main-text-color);
+    .menu {
+      margin: 15px 10px 0 10px;
+
+      .title {
+        margin: 2px 0;
+        font-size: 15px;
+        color: var(--main-text-color);
+      }
+      .menulist {
+        // width: 50px;
+        margin-top: 0;
+        // margin-bottom: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .menulistitem {
+          cursor: pointer;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          border-radius: 10px;
+          .linkText {
+            text-decoration: none;
+            .sideIcons {
+              padding-right: 15px;
+            }
+          }
+          .sideIcons {
+            padding-right: 15px;
+          }
+          &:hover {
+            width: 70%;
+            // background-color: rgb(121, 103, 202);
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            .linkText {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

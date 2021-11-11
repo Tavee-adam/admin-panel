@@ -1,0 +1,93 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--main-color);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: -1px 7px 27px -6px rgba(197, 178, 219, 0.801);
+  -webkit-box-shadow: -1px 7px 27px -6px rgba(197, 178, 219, 0.801);
+  -moz-box-shadow: -1px 7px 27px -6px rgba(197, 178, 219, 0.801);
+
+  .TopbarWarpper {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .TopLeft {
+      .logo {
+        font-weight: bold;
+        font-size: 30px;
+        color: var(--main-text-color);
+        cursor: pointer;
+        &:hover {
+          color: rgb(63, 20, 20);
+        }
+      }
+    }
+    .TopRight {
+      display: flex;
+      flex-direction: row;
+      //   position: fixed;
+      //   right: 50px;
+      //   top: 15px;
+      align-items: center;
+      justify-content: center;
+
+      .IconContainer {
+        position: relative;
+        margin-right: 10px;
+
+        .Icon {
+          color: var(--main-icon-color);
+          padding: 0 10px;
+          cursor: pointer;
+        }
+
+        .NumberNotify {
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background-color: red;
+          color: white;
+          padding: 3px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      ArrowDropDownIcon {
+        position: fixed;
+      }
+      .options {
+        display: none;
+        border-radius: 5px;
+        background-color: var(--main-color);
+        width: 90px;
+      }
+      .toggle {
+        padding: 10px;
+        cursor: pointer;
+      }
+      &:hover {
+        .options {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          right: 0;
+          border: 1px solid rgb(65, 3, 94);
+        }
+        span:hover {
+          background-color: var(--secondary-color);
+          //   background-color: rgb(53, 0, 104);
+          color: white;
+        }
+      }
+    }
+  }
+}

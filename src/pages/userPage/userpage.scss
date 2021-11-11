@@ -1,0 +1,150 @@
+.userPage {
+  flex: 4;
+  margin-left: 10px;
+  .userTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+    .userAdding {
+      width: 80px;
+      height: max-content;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: rgb(7, 138, 7);
+    }
+    &:hover {
+      .userAdding {
+        background-color: rgb(18, 179, 18);
+      }
+    }
+  }
+  .userContainer {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .userDisplay {
+      flex: 1;
+      padding: 20px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin-right: 10px;
+
+      .userDisplayTop {
+        display: flex;
+        align-items: center;
+        .userDisplayImg {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .userDisplayTitle {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          .username {
+            font-weight: 600;
+          }
+          .description {
+            font-weight: 300;
+          }
+        }
+      }
+      .userDisplayBottom {
+        margin-top: 20px;
+        .userInfo {
+          font-weight: 600;
+          font-size: 14px;
+          color: rgb(76, 3, 119);
+        }
+        .userDisplatInfoDetail {
+          display: flex;
+          align-items: center;
+          margin: 20px 0;
+          color: rgba(48, 3, 131, 0.699);
+          .userDisplayIcon {
+            font-size: 16px !important;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    .userEdit {
+      flex: 2;
+      margin-right: 10px;
+      padding: 20px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      overflow: hidden;
+      .userEditTitle {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--main-text-color);
+      }
+      .userUpdateForm {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .userUpdateLeft {
+          .userUpdateItems {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            label {
+              font-size: 16px;
+              font-weight: 300;
+              color: var(--secondary-text-color);
+            }
+            .userUpdateInput {
+              margin-top: 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+              color: var(--secondary-text-color);
+            }
+          }
+        }
+        .userUpdateRight {
+          width: 200px;
+          display: flex;
+          flex-direction: column;
+          align-content: flex-end;
+          justify-content: space-between;
+          align-items: stretch;
+          .userUpdateUpload {
+            display: flex;
+            flex-direction: column;
+            .userUpdateImg {
+              width: 150px;
+              height: 150px;
+              border-radius: 10px;
+              object-fit: cover;
+              // margin-left: 20px;
+              // display: inline;
+            }
+            .userUpdateInput {
+              margin-top: 10px;
+              cursor: pointer;
+            }
+          }
+
+          .userUpdateBut {
+            border-radius: 5px;
+            border: none;
+            height: 30px;
+            background-color: var(--main-text-color);
+            color: var(--main-color);
+            cursor: pointer;
+            &:hover {
+              background-color: var(--secondary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

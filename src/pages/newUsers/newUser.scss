@@ -1,0 +1,53 @@
+.newUser {
+  flex: 4;
+  margin-left: 10px;
+  .newUserTitle {
+    color: var(--main-text-color);
+  }
+  .newUserForm {
+    display: flex;
+    flex-wrap: wrap;
+
+    .newUserItems {
+      display: flex;
+      width: 400px;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-right: 20px;
+      label {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--secondary-text-color);
+      }
+      input {
+        color: var(--secondary-text-color);
+        height: 30px;
+        border-radius: 5px;
+
+        border: 1px solid var(--secondary-color);
+      }
+      .newUserSelect {
+        height: 40px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        option {
+          color: var(--main-text-color);
+        }
+      }
+    }
+    .newUserCreateButton {
+      margin-top: 36px;
+      width: 200px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: var(--main-color);
+      background-color: var(--main-text-color);
+      &:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+  }
+}
